@@ -39,16 +39,12 @@ npx expo start
 ### 3. Download the Expo Go App and scan the QR code in your terminal.
 
 ### 4. The file Structures
+`app/index.js` - Entry point (Redirects to Login).
 
-├── app/
-│   ├── _layout.js       # Navigation configuration (Stack & Modals)
-│   ├── home.js          # Main Map Screen (Logic, Routing, Tracking)
-│   ├── index.js         # Entry Point (Redirects to Login)
-│   ├── login.js         # Login Screen
-│   └── profile.js       # User Profile (Slide-up Modal)
-├── .gitignore           # Files to ignore (node_modules, keys)
-├── app.json             # Expo project configuration
-├── babel.config.js      # Babel setup for NativeWind
-├── package.json         # List of installed dependencies
-├── tailwind.config.js   # Tailwind CSS configuration
-└── README.md            # Project documentation
+`app/login.js` - The login screen.
+
+`app/home.js` - Main Map interface & Logic.
+
+`app/profile.js` - User profile modal.
+
+`babel.config.js` - Configuration for NativeWind styling.

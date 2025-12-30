@@ -1,4 +1,4 @@
-# 🌊 RideWave (Campus Shuttle App)
+# Campus-Loop (Campus Shuttle App)
 
 A campus rideshare and shuttle tracking application built with **React Native** and **Expo**. This app allows students to view fixed campus routes, reserve seats, and simulate live ride tracking from the Connelly Center hub to local destinations.
 
@@ -19,10 +19,36 @@ A campus rideshare and shuttle tracking application built with **React Native** 
 
 ## 🚀 How to Run This Project
 
-Since we don't upload the heavy `node_modules` folder to GitHub, you need to install the dependencies first.
+You need to install the dependencies first.
 
 ### 1. Clone the repository
 Open your terminal and run:
 ```bash
 git clone [https://github.com/YOUR_USERNAME/REPO_NAME.git](https://github.com/YOUR_USERNAME/REPO_NAME.git)
 cd REPO_NAME
+```
+### 2. Install dependencies
+Open your terminal and run:
+```bash
+npm install
+```
+To start the server, run
+```bash
+npx expo start
+```
+### 3. Download the Expo Go App and scan the QR code in your terminal.
+
+### 4. The file Structures
+
+├── app/
+│   ├── _layout.js       # Navigation configuration (Stack & Modals)
+│   ├── home.js          # Main Map Screen (Logic, Routing, Tracking)
+│   ├── index.js         # Entry Point (Redirects to Login)
+│   ├── login.js         # Login Screen
+│   └── profile.js       # User Profile (Slide-up Modal)
+├── .gitignore           # Files to ignore (node_modules, keys)
+├── app.json             # Expo project configuration
+├── babel.config.js      # Babel setup for NativeWind
+├── package.json         # List of installed dependencies
+├── tailwind.config.js   # Tailwind CSS configuration
+└── README.md            # Project documentation

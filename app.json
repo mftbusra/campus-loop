@@ -1,4 +1,7 @@
 {
   "name": "campus-loop",
-  "slug": "campus-loop"
+  "slug": "campus-loop",
+  "plugins": [
+    "expo-router"
+  ]
 }

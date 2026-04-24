@@ -1,7 +1,19 @@
+
 {
-  "name": "campus-loop",
-  "slug": "campus-loop",
-  "plugins": [
-    "expo-router"
-  ]
+  "expo": {
+    "name": "campus-loop",
+    "slug": "campus-loop",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.busra.campusloop" 
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7b08c8a2-c605-4fee-b85d-d77bac6a2a51"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
 }

@@ -4,7 +4,12 @@
     "name": "campus-loop",
     "slug": "campus-loop",
     "version": "1.0.0",
+    "icon": "./assets/logo.png",
     "android": {
+       "adaptiveIcon": {
+    "foregroundImage": "./assets/logo.png",
+    "backgroundColor": "#ffffff"
+  },
       "package": "com.busra.campusloop" 
     },
     "extra": {

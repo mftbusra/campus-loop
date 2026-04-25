@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native'; // 1. Added Image here
 import { useRouter } from 'expo-router';
 
 export default function LoginScreen() {
@@ -7,9 +7,8 @@ export default function LoginScreen() {
   return (
     <View className="flex-1 justify-center items-center bg-gray-100 p-5">
       <Text className="text-3xl font-bold mb-10 text-blue-600">Campus Loop</Text> 
-          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       
-      {/* 2. Add this block for the logo */}
+      {/* 2. Removed the extra <View> that was causing the tag mismatch */}
       <Image 
         source={require('../assets/logo.png')} 
         style={{ width: 150, height: 150, marginBottom: 20 }}
